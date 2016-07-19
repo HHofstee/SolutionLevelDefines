@@ -10,6 +10,12 @@ namespace SolutionLevelDefines
     {
         static void Main(string[] args)
         {
+#if DOYOURTHING
+            Console.WriteLine("Do your thing");
+#else
+            Console.WriteLine("Don't do your thing");
+#endif
+            Console.ReadLine();
         }
     }
 }
